@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\Banghay\\Banghay.csproj": {}
+    "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\BanghayApi.Contracts\\BanghayApi.Contracts.csproj": {}
   },
   "projects": {
-    "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\Banghay\\Banghay.csproj": {
+    "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\BanghayApi.Contracts\\BanghayApi.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\Banghay\\Banghay.csproj",
-        "projectName": "Banghay",
-        "projectPath": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\Banghay\\Banghay.csproj",
+        "projectUniqueName": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\BanghayApi.Contracts\\BanghayApi.Contracts.csproj",
+        "projectName": "BanghayApi.Contracts",
+        "projectPath": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\BanghayApi.Contracts\\BanghayApi.Contracts.csproj",
         "packagesPath": "C:\\Users\\josep\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\Banghay\\obj\\",
+        "outputPath": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\BanghayApi.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\josep\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -34,12 +34,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -52,9 +46,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

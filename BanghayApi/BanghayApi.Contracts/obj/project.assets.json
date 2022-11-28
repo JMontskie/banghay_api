@@ -5,9 +5,7 @@
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "Swashbuckle.AspNetCore >= 6.2.3"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\josep\\.nuget\\packages\\": {}
@@ -15,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\Banghay\\Banghay.csproj",
-      "projectName": "Banghay",
-      "projectPath": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\Banghay\\Banghay.csproj",
+      "projectUniqueName": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\BanghayApi.Contracts\\BanghayApi.Contracts.csproj",
+      "projectName": "BanghayApi.Contracts",
+      "projectPath": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\BanghayApi.Contracts\\BanghayApi.Contracts.csproj",
       "packagesPath": "C:\\Users\\josep\\.nuget\\packages\\",
-      "outputPath": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\Banghay\\obj\\",
+      "outputPath": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\BanghayApi.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\josep\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,12 +40,6 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
-        "dependencies": {
-          "Swashbuckle.AspNetCore": {
-            "target": "Package",
-            "version": "[6.2.3, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -60,9 +52,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
@@ -70,16 +59,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'Swashbuckle.AspNetCore (>= 6.2.3)' for 'net6.0'.",
-      "libraryId": "Swashbuckle.AspNetCore",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }

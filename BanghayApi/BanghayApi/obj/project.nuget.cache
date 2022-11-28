@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "SheSQBWRThdH1Ujnc3QXG0bWb1q+Sd2QOZGGmYTL/fwPvFS4GZSKv06lN1WRzc44YCSoXNnKrGEIira8x5vH2g==",
-  "success": true,
+  "dgSpecHash": "2n+NvUOjs55VQm1xCrMkIvh/ydDyQfJU8L8OqwAW2acyGkG3sh/jWwg77g5Ncz/v4kWdZzg2BSnEV99PmX0dmw==",
+  "success": false,
   "projectFilePath": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\BanghayApi\\BanghayApi.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Swashbuckle.AspNetCore (>= 6.2.3)' for 'net6.0'.",
+      "libraryId": "Swashbuckle.AspNetCore",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

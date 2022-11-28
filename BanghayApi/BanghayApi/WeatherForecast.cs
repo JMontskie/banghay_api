@@ -1,4 +1,4 @@
-namespace Banghay;
+namespace BanghayApi;
 
 public class WeatherForecast
 {

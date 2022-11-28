@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Banghay.Controllers;
+namespace BanghayApi.Controllers;
 
 [ApiController]
 [Route("[controller]")]

@@ -64,7 +64,8 @@ Location: {{ host }}/Modules/ {{ id }}
     "description": "History module for Grade 1 students.. ",
     "created by": "Test User 1",
     "startDateTime": "2022-11-28T08:00:00",
-    "endDateTime": "2022-11-28T11:00:00", /* Server-Generated */
+    "endDateTime": "2022-11-28T11:00:00",
+    "lastModifiedDateTime": "22-04-06T12:00:00", /* Server-Generated */
     "tags": [
         "Hekasi",
         "History",
@@ -93,7 +94,8 @@ GET /modules/{{ id }}
     "description": "History module for Grade 1 students.. ",
     "created by": "Test User 1",
     "startDateTime": "2022-11-28T08:00:00",
-    "endDateTime": "2022-11-28T11:00:00", /* Server-Generated */
+    "endDateTime": "2022-11-28T11:00:00",
+    "lastModifiedDateTime": "22-04-06T12:00:00", /* Server-Generated */
     "tags": [
         "Hekasi",
         "History",
