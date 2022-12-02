@@ -1,5 +1,5 @@
-namespace BanghayApi.Contracts.Modules
-{
+namespace BanghayApi.Contracts.Modules;
+
 public record UpsertModuleRequest (
     string Name,
     string Description,
@@ -7,4 +7,3 @@ public record UpsertModuleRequest (
     DateTime StartDateTime,
     DateTime EndDateTime,
     List<string> Tags);
-}

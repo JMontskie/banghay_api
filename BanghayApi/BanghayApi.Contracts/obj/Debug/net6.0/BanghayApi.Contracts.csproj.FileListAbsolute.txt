@@ -1,0 +1,12 @@
+c:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi.Contracts\bin\Debug\net6.0\BanghayApi.Contracts.deps.json
+c:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi.Contracts\bin\Debug\net6.0\BanghayApi.Contracts.dll
+c:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi.Contracts\bin\Debug\net6.0\BanghayApi.Contracts.pdb
+c:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi.Contracts\obj\Debug\net6.0\BanghayApi.Contracts.csproj.AssemblyReference.cache
+c:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi.Contracts\obj\Debug\net6.0\BanghayApi.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+c:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi.Contracts\obj\Debug\net6.0\BanghayApi.Contracts.AssemblyInfoInputs.cache
+c:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi.Contracts\obj\Debug\net6.0\BanghayApi.Contracts.AssemblyInfo.cs
+c:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi.Contracts\obj\Debug\net6.0\BanghayApi.Contracts.csproj.CoreCompileInputs.cache
+c:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi.Contracts\obj\Debug\net6.0\BanghayApi.Contracts.dll
+c:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi.Contracts\obj\Debug\net6.0\refint\BanghayApi.Contracts.dll
+c:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi.Contracts\obj\Debug\net6.0\BanghayApi.Contracts.pdb
+c:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi.Contracts\obj\Debug\net6.0\ref\BanghayApi.Contracts.dll

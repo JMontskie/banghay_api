@@ -35,7 +35,7 @@ POST /modules
 {
     "name": "Hekasi Grade 1",
     "description": "History module for Grade 1 students.. ",
-    "created by": "Test User 1",
+    "createdBy": "Test User 1",
     "startDateTime": "2022-11-28T08:00:00",
     "endDateTime": "2022-11-28T11:00:00",
     "tags": [
@@ -59,10 +59,10 @@ Location: {{ host }}/Modules/ {{ id }}
 
 ```json
 {
-    "id": "00000000-0000-0000-0000-00000000", /* Server-Generated */
+    "id": "00000000-0000-0000-0000-000000000000", /* Server-Generated */
     "name": "Hekasi Grade 1",
     "description": "History module for Grade 1 students.. ",
-    "created by": "Test User 1",
+    "createdBy": "Test User 1",
     "startDateTime": "2022-11-28T08:00:00",
     "endDateTime": "2022-11-28T11:00:00",
     "lastModifiedDateTime": "22-04-06T12:00:00", /* Server-Generated */
@@ -89,10 +89,10 @@ GET /modules/{{ id }}
 
 ```json
 {
-    "id": "00000000-0000-0000-0000-00000000", /* Server-Generated */
+    "id": "00000000-0000-0000-0000-000000000000", /* Server-Generated */
     "name": "Hekasi Grade 1",
     "description": "History module for Grade 1 students.. ",
-    "created by": "Test User 1",
+    "createdBy": "Test User 1",
     "startDateTime": "2022-11-28T08:00:00",
     "endDateTime": "2022-11-28T11:00:00",
     "lastModifiedDateTime": "22-04-06T12:00:00", /* Server-Generated */
@@ -115,7 +115,7 @@ PUT /modules/{{ id }}
 {
     "name": "Hekasi Grade 1",
     "description": "History module for Grade 1 students.. ",
-    "created by": "Test User 1",
+    "createdBy": "Test User 1",
     "startDateTime": "2022-11-28T08:00:00",
     "tags": [
         "Hekasi",

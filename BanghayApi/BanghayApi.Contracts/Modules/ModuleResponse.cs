@@ -1,5 +1,5 @@
-namespace BanghayApi.Contracts.Modules
-{
+namespace BanghayApi.Contracts.Modules;
+
 public record ModuleResponse (
     Guid Id,
     string Name,
@@ -9,5 +9,5 @@ public record ModuleResponse (
     DateTime EndDateTime,
     DateTime LastModifiedDateTime,
     List<string> Tags);
-}
+
 

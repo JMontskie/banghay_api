@@ -1,12 +1,29 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "BanghayApi.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BanghayApi.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BanghayApi.Contracts.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BanghayApi.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../BanghayApi.Contracts/BanghayApi.Contracts.csproj",
+      "msbuildProject": "../BanghayApi.Contracts/BanghayApi.Contracts.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Swashbuckle.AspNetCore >= 6.2.3"
+      "BanghayApi.Contracts >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -30,7 +47,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\BanghayApi.Contracts\\BanghayApi.Contracts.csproj": {
+              "projectPath": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\BanghayApi.Contracts\\BanghayApi.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -42,12 +63,6 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
-        "dependencies": {
-          "Swashbuckle.AspNetCore": {
-            "target": "Package",
-            "version": "[6.2.3, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -70,16 +85,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'Swashbuckle.AspNetCore (>= 6.2.3)' for 'net6.0'.",
-      "libraryId": "Swashbuckle.AspNetCore",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }
