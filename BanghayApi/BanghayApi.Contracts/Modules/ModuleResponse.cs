@@ -1,6 +1,6 @@
 namespace BanghayApi.Contracts.Modules;
 
-public record ModuleResponse (
+public record   ModuleResponse (
     Guid Id,
     string Name,
     string Description,
