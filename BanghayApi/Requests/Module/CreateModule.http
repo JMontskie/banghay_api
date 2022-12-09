@@ -14,3 +14,8 @@ Content-Type: application/json
         "Primary Education"
     ]
 }
+
+
+###
+
+GET https://localhost:7040/Modules/6402d784-335c-4bc9-8d64-60b32ce981ad

@@ -1,10 +1,10 @@
-@id=00000000-0000-0000-0000-000000000000 
+@id=604258fd-aaa4-4165-8119-ba27f81606f4 
 #take note that the maximum length of a globally unique identification number of .NET (Guid.NewGuid) is 32 (digits), 36 (ToString(Hypenated or not)).
 PUT https://localhost:7040/modules/{{ id }}
 Content-Type: application/json
 
 {
-    "name": "Hekasi Grade 1",
+    "name": "Hekasi Grade 2",
     "description": "History module for Grade 1 students.. ",
     "createdby": "Test User 1",
     "startDateTime": "2022-11-28T08:00:00",

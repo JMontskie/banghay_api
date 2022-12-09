@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bfdw7nH7w2LuArUQnR4T6rCIEjC2bGl0EcGKqlbbEMh3TIrr+HakVX76gyw2VSRfJRHU2HLUkNU4BHx5egO/Fg==",
+  "dgSpecHash": "pYSITJfkSXuWy84CyMDNJPtEkZCOt+8YLUFuL6ad0dILgRjB2wz+yBShpG5Y6WkniANQdL/uq7oZK8jFAXwr5g==",
   "success": true,
   "projectFilePath": "C:\\xampp\\htdocs\\BanghayAPI\\BanghayApi\\BanghayApi\\BanghayApi.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\josep\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512"
+  ],
   "logs": []
 }

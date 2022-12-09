@@ -22,3 +22,4 @@ C:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi\obj\Debug\net6.0\refint\Banghay
 C:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi\obj\Debug\net6.0\BanghayApi.pdb
 C:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi\obj\Debug\net6.0\BanghayApi.genruntimeconfig.cache
 C:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi\obj\Debug\net6.0\ref\BanghayApi.dll
+C:\xampp\htdocs\BanghayAPI\BanghayApi\BanghayApi\bin\Debug\net6.0\ErrorOr.dll
