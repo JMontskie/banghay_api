@@ -1,4 +1,4 @@
-@id=604258fd-aaa4-4165-8119-ba27f81606f4
+@id=1f4b7b11-3c89-4c77-a033-fb05a8a83813
 DELETE  https://localhost:7040/modules/{{ id }}
 
  
