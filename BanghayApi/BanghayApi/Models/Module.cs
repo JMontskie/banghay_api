@@ -27,55 +27,55 @@ public class Module {
         DateTime lastModifiedDateTime,
         List<string> tags)
 
+    {
+        Id = id;
+        Name = name;
+        Description = description;
+        CreatedBy = createdBy;
+        StartDateTime = startDateTime;
+        EndDateTime = endDateTime;
+        LastModifiedDateTime = lastModifiedDateTime;
+        Tags = tags;
+    }
+
+    public static ErrorOr<Module> Create(
+        string name,
+        string description,
+        string createdBy,
+        DateTime startDateTime,
+        DateTime endDateTime,
+        List<string> tags,
+        Guid ? id = null)
+
+    {
+
+        // enforce invariants
+        List<Error> errors = new ();
+
+        if (name.Length is < MinNameLength or > MaxNameLength)
         {
-            Id = id;
-            Name = name;
-            Description = description;
-            CreatedBy = createdBy;
-            StartDateTime = startDateTime;
-            EndDateTime = endDateTime;
-            LastModifiedDateTime = lastModifiedDateTime;
-            Tags = tags;
+            errors.Add(Errors.Module.InvalidName);
         }
 
-        public static ErrorOr<Module> Create(
-            string name,
-            string description,
-            string createdBy,
-            DateTime startDateTime,
-            DateTime endDateTime,
-            DateTime lastModifiedDateTime,
-            List<string> tags,
-            Guid ? id = null)
+        if (description.Length is < MinDescriptionLength or > MaxDescriptionLength)
         {
-
-            // enforce invariants
-            List<Error> errors = new ();
-
-            if (name.Length is < MinNameLength or > MaxNameLength)
-            {
-                errors.Add(Errors.Module.InvalidName);
-            }
-
-            if (description.Length is < MinDescriptionLength or > MaxDescriptionLength)
-            {
-                errors.Add(Errors.Module.InvalidDescription);
-            }
-
-            if (errors.Count > 0) {
-                return errors;
-            }
-            
-            return new Module(
-                id ?? Guid.NewGuid(),
-                name,
-                description,
-                createdBy,
-                startDateTime,
-                endDateTime,
-                DateTime.UtcNow,
-                tags
-            );
+            errors.Add(Errors.Module.InvalidDescription);
         }
+
+        if (errors.Count > 0) {
+            return errors;
+        }
+        
+        return new Module(
+            id ?? Guid.NewGuid(),
+            name,
+            description,
+            createdBy,
+            startDateTime,
+            endDateTime,
+            DateTime.UtcNow,
+            tags
+        );
+    }
 
 }
