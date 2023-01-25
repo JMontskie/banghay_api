@@ -1,3 +1,4 @@
+using BanghayApi.Contracts.Modules;
 using BanghayApi.ServiceErrors;
 using ErrorOr;
 
@@ -38,7 +39,7 @@ public class Module {
         Tags = tags;
     }
 
-    public static ErrorOr<Module> Create(
+    public static ErrorOr<Module> Create( //returns module or list of errors to the controller
         string name,
         string description,
         string createdBy,
@@ -49,7 +50,7 @@ public class Module {
 
     {
 
-        // enforce invariants
+        // enforce invariants or business rules; encapsulating the logic that has to do with modules inside the module object
         List<Error> errors = new ();
 
         if (name.Length is < MinNameLength or > MaxNameLength)
@@ -77,5 +78,30 @@ public class Module {
             tags
         );
     }
+    
 
+    public static ErrorOr<Module> From(CreateModuleRequest request)
+    {
+        return Create(
+            request.Name,
+            request.Description,
+            request.CreatedBy,
+            request.StartDateTime,
+            request.EndDateTime,
+            request.Tags
+        );
+    }
+
+    public static ErrorOr<Module> From(Guid id, UpsertModuleRequest request)
+    {
+        return Create(
+            request.Name,
+            request.Description,
+            request.CreatedBy,
+            request.StartDateTime,
+            request.EndDateTime,
+            request.Tags,
+            id
+        );
+    }
 }

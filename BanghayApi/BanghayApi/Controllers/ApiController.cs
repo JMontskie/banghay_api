@@ -3,6 +3,7 @@ namespace BanghayApi.Controllers;
 using System;
 using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 
 [ApiController]
@@ -11,6 +12,24 @@ public class ApiController : ControllerBase
 {
     protected IActionResult Problem(List<Error> errors)
     {
+        if (errors.All(e => e.Type == ErrorType.Validation)) //if we had validation error, return bad request with all the details
+
+        {
+            var modelStateDictionary = new ModelStateDictionary();
+
+            foreach (var error in errors)
+            {
+                modelStateDictionary.AddModelError(error.Code, error.Description);
+            }
+
+            return ValidationProblem(modelStateDictionary); //converts error to error-response which contains all the details about the error.
+        }
+
+        if (errors.Any(e => e.Type == ErrorType.Unexpected))
+        {
+            return Problem();
+        }
+        
         var firstError = errors [0];
 
         var statusCode = firstError.Type switch

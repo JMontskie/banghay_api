@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
     "name": "Hekasi Grade 1",
-    "description": "History module for Grade 1 students.. ",
+    "description": "History module for Grade 1 students, this module is focused on early history of the Philippines, specifically, the pre-colonial Phillippines ",
     "createdby": "Test User 1",
     "startDateTime": "2022-11-28T08:00:00",
     "endDateTime": "2022-11-28T11:00:00",

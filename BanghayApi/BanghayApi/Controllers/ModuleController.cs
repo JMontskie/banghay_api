@@ -18,13 +18,8 @@ public class ModulesController : ApiController {
     [HttpPost()]
     public IActionResult CreateModule(CreateModuleRequest request)
     {
-        ErrorOr<Module> requestToModuleResult = Module.Create( // Map data from our API to whichever language our application on the client uses.
-            request.Name,
-            request.Description,
-            request.CreatedBy,
-            request.StartDateTime,
-            request.EndDateTime,
-            request.Tags);
+        ErrorOr<Module> requestToModuleResult = Module.From(request); // Map data from our API to whichever language our application on the client uses.
+
 
         if (requestToModuleResult.IsError){
             return Problem(requestToModuleResult.Errors);
@@ -60,14 +55,7 @@ public class ModulesController : ApiController {
 
     public IActionResult UpsertModule(Guid id, UpsertModuleRequest request)
     {
-        ErrorOr<Module> requestToModuleResult = Module.Create(
-            request.Name,
-            request.Description,
-            request.CreatedBy,
-            request.StartDateTime,
-            request.EndDateTime,
-            request.Tags,
-            id);
+        ErrorOr<Module> requestToModuleResult = Module.From(id, request);
 
         if (requestToModuleResult.IsError){
             return Problem(requestToModuleResult.Errors);
@@ -76,8 +64,6 @@ public class ModulesController : ApiController {
         var module = requestToModuleResult.Value;
         
         ErrorOr<UpsertedModule> upsertModuleResult = _moduleService.UpsertModule(module);
-
-        //return 201 if a new module is created
         
         return upsertModuleResult.Match(
             upserted => upserted.IsNewlyCreated ? CreatedAtGetModule(module) : NoContent(),

@@ -9,12 +9,12 @@ public static class Errors
         public static Error InvalidName => Error.Validation( // this method originates from ErrorOr package. Returns what 404 Not Found.
             code: "Module.InvalidName",
             description: $"Module name must be at least {Models.Module.MinNameLength}" +
-                        $"characters long and at most {Models.Module.MaxNameLength}");
+                        $" characters long and at most {Models.Module.MaxNameLength}");
 
         public static Error InvalidDescription => Error.Validation( // this method originates from ErrorOr package. Returns what 404 Not Found.
             code: "Module.InvalidDescription",
             description: $"Module description must be at least {Models.Module.MinDescriptionLength}" + 
-                        $"characters long and at most {Models.Module.MaxDescriptionLength}");
+                        $" characters long and at most {Models.Module.MaxDescriptionLength}");
 
          public static Error NotFound => Error.NotFound( // this method originates from ErrorOr package. Returns what 404 Not Found.
             code: "Module.NotFound",
